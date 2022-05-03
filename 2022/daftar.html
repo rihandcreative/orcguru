@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - Olimpiade Guru Rihand Creative - 2022</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/plugins/icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/plugins/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="../assets/2022/rihand.css">
+</head>
+<body> 
+
+<div class="position-relative">
+    <div class="position-absolute top-0 start-0">
+        <img src="../assets/rihand/logo-circle.png" alt="" width="15%" class="rounded-circle img-logo">
+    </div>
+    <div class="position-absolute top-0 start-100 translate-middle">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60vw" id="blobSvg">
+            <path id="blob" d="M395,286Q362,322,347.5,377Q333,432,279.5,423Q226,414,180.5,398.5Q135,383,119,338Q103,293,74,241.5Q45,190,66.5,126.5Q88,63,157,74.5Q226,86,282,71.5Q338,57,364.5,108Q391,159,409.5,204.5Q428,250,395,286Z" fill="#ffffff"></path>
+        </svg>
+    </div>
+</div>
+    
+<main class="container">
+
+    <div class="text-center mb-5">
+        <h3 style="font-weight: inherit;">OLIMPIADE GURU RIHAND CREATVE</h3>
+        <h1>ORC GURU 2022</h1>
+    </div>
+
+    <div class="card">
+        <div class="card-body p-5">
+            <h1 class="text-center">PENDAFTARAN</h1><hr>
+
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeKjEMKgru2AEL3A0HukjI9QvNGb-_wrXAaGZA4KmCeVifKmQ/formResponse"
+                target="_self"
+                id="daftarForm"
+                method="POST">
+
+                <input id="1337705818" type="hidden" name="entry.1337705818" class="form-control" value="I">
+
+                <div class="input-group mb-4">
+                    <span class="input-group-text p-3"><i class="bi bi-person-fill"></i></span>
+                    <input type="text" class="form-control" id="1006327405" name="entry.1006327405" onkeyup="inputUpper(this);" placeholder="Nama Lengkap" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text p-3"><i class="bi bi-bank2"></i></span>
+                    <input type="text" class="form-control" id="1192491853" name="entry.1192491853" onkeyup="inputUpper(this);" placeholder="Nama Instansi/Sekolah dan Kota/Daerah" required>
+                </div>
+                <p class="form-text mb-4">*) Contoh: SMPN 123 Kota Mataram.</p>
+
+                <div class="input-group mb-4">
+                    <span class="input-group-text p-3"><i class="bi bi-calendar2-check-fill"></i></span>
+                    <input type="text" class="form-control" id="2111016443" name="entry.2111016443" onfocus="(this.type='date')" placeholder="Tanggal Lahir" required>
+                </div>
+
+                <hr>
+               
+                <div class="input-group mb-4">
+                    <span class="input-group-text p-3"><i class="bi bi-envelope-fill"></i></span>
+                    <input type="email" class="form-control" id="162278860" name="entry.162278860" onkeyup="inputLower(this);" placeholder="Alamat Email" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text p-3"><i class="bi bi-whatsapp"></i></span>
+                    <input type="number" class="form-control" id="495095355" name="entry.495095355" placeholder="Nomor WhatsApp Aktif" required>
+                </div>
+                <p class="form-text mb-4">*) Awali dengan 0. Contoh: 08123456789.</p>
+
+                <hr>
+
+                <div class="input-group mb-4">
+                    <span class="input-group-text p-3"><i class="bi bi-hand-thumbs-up"></i></span>
+                    <textarea class="form-control" id="1274395459" name="entry.1274395459" placeholder="Motivasi Mengikuti Event" required></textarea>
+                </div>
+
+                <fieldset>
+                    <legend for="1576175487">Kartu Identitas sebagai Guru</legend>
+                    <input type="text" id="891667390" name="entry.891667390" class="d-none" required>
+                    <button type="button" id="btnIdentitas" class="btn btn-success col-8 rounded-pill p-3"><i class="bi bi-file-earmark-person-fill"></i> Upload Kartu Identitas</button>
+                    <div id="gambarIdentitas"></div>
+                </fieldset>
+
+
+                <div class="m-5"><hr></div>
+
+
+                <input type="hidden" id="bayarOngkirInput">
+                <fieldset class="mb-4">
+                    <legend for="1898324325">Ingin menerima free paket reward?</legend>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" id="ongkirYa" onchange="hitungHarga()" name="entry.1574377242" value="Ya" required>
+                                Ya (membayarkan ongkir)
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" id="ongkirTidak" onchange="hitungHarga()" name="entry.1574377242" value="Tidak" required>
+                                Tidak
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <!-- Field type: "paragraph" id: "974306504" -->
+                <fieldset class="mb-4">
+                    <legend for="974306504">Alamat Pengiriman</legend>
+                    <div class="form-group">
+                        <textarea id="817013035" name="entry.817013035" class="form-control" rows="5" placeholder="Nama jalan, nomor rumah, petunjuk, RT/RW, kelurahan, kecamatan, kota/kabupaten" required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="input-group mb-4">
+                    <span class="input-group-text p-3"><i class="bi bi-map"></i></span>
+                    <select onchange="hitungHarga();" id="1108582854" name="entry.2120338449" class="form-select" required>
+                        <option value="" selected hidden>Provinsi</option>
+                        <option value="" disabled></option>
+                        <option data-harga='70000' value='Aceh'>Aceh</option>
+                        <option data-harga='25000' value='Bali'>Bali</option>
+                        <option data-harga='50000' value='Bangka Belitung'>Bangka Belitung</option>
+                        <option data-harga='25000' value='Banten'>Banten</option>
+                        <option data-harga='60000' value='Bengkulu'>Bengkulu</option>
+                        <option data-harga='75000' value='Gorontalo'>Gorontalo</option>
+                        <option data-harga='25000' value='DKI Jakarta'>DKI Jakarta</option>
+                        <option data-harga='50000' value='Jambi'>Jambi</option>
+                        <option data-harga='25000' value='Jawa Barat'>Jawa Barat</option>
+                        <option data-harga='25000' value='Jawa Tengah'>Jawa Tengah</option>
+                        <option data-harga='25000' value='Jawa Timur'>Jawa Timur</option>
+                        <option data-harga='60000' value='Kalimantan Barat'>Kalimantan Barat</option>
+                        <option data-harga='50000' value='Kalimantan Selatan'>Kalimantan Selatan</option>
+                        <option data-harga='55000' value='Kalimantan Tengah'>Kalimantan Tengah</option>
+                        <option data-harga='60000' value='Kalimantan Timur'>Kalimantan Timur</option>
+                        <option data-harga='70000' value='Kalimantan Utara'>Kalimantan Utara</option>
+                        <option data-harga='65000' value='Kepulauan Riau'>Kepulauan Riau</option>
+                        <option data-harga='40000' value='Lampung'>Lampung</option>
+                        <option data-harga='120000' value='Maluku'>Maluku</option>
+                        <option data-harga='80000' value='Maluku Utara'>Maluku Utara</option>
+                        <option data-harga='35000' value='Nusa Tenggara Barat'>Nusa Tenggara Barat</option>
+                        <option data-harga='90000' value='Nusa Tenggara Timur'>Nusa Tenggara Timur</option>
+                        <option data-harga='130000' value='Papua'>Papua</option>
+                        <option data-harga='130000' value='Papua Barat'>Papua Barat</option>
+                        <option data-harga='60000' value='Riau'>Riau</option>
+                        <option data-harga='60000' value='Sulawesi Barat'>Sulawesi Barat</option>
+                        <option data-harga='60000' value='Sulawesi Selatan'>Sulawesi Selatan</option>
+                        <option data-harga='80000' value='Sulawesi Tengah'>Sulawesi Tengah</option>
+                        <option data-harga='85000' value='Sulawesi Tenggara'>Sulawesi Tenggara</option>
+                        <option data-harga='90000' value='Sulawesi Utara'>Sulawesi Utara</option>
+                        <option data-harga='55000' value='Sumatera Barat'>Sumatera Barat</option>
+                        <option data-harga='50000' value='Sumatera Selatan'>Sumatera Selatan</option>
+                        <option data-harga='60000' value='Sumatera Utara'>Sumatera Utara</option>
+                        <option data-harga='25000' value='Yogyakarta'>Yogyakarta</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-4">
+                    <span class="input-group-text p-3"><i class="bi bi-geo-alt-fill"></i></span>
+                    <input type="number" class="form-control" id="52393876" name="entry.52393876" placeholder="Kode Pos" required>
+                </div>
+
+                <fieldset>
+                    <legend for="247342965">Catatan Pengiriman</legend>
+                    <div class="form-group">
+                        <p class="help-block"></p>
+                        <textarea id="1577257894" name="entry.1577257894" class="form-control" placeholder="*) Tidak wajib"></textarea>
+                    </div>
+                </fieldset>
+
+
+                <div class="m-5"><hr></div>
+
+
+                Biaya Pendaftaran:
+                <h3>Rp<span id="biaya">71000</span></h3>
+                <div>
+                    Metode Pembayaran:
+                    <ul>
+                        <li>
+                            <b>Bank Transfer</b>
+                            <ul>
+                                <li>Mandiri: 1440022220229</li>
+                                <li>BCA: 0113100424</li>
+                                <li>(a/n Rihand Kreatif Indonesia)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>QR Code</b><br> (jika ingin membayar via e-wallet seperti GoPay, OVO, Dana, dll. atau e-banking)<br>
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#qris">Lihat QR Code</button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <br><hr><br>
+
+                <div class="modal fade" id="qris" tabindex="-1" aria-labelledby="qrisLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="qrisLabel">QR CODE</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../assets/rihand/qrcode.jpeg" width="100%" class="rounded">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Field type: "choices" id: "1899355202" -->
+                <fieldset class="mb-4">
+                    <legend for="1899355202">Tujuan Pembayaran</legend>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="entry.324789880" value="Kode QR" required>
+                                Kode QR
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="entry.324789880" value="Transfer: BCA" required>
+                                Transfer: BCA
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="entry.324789880" value="Transfer: Mandiri" required>
+                                Transfer: Mandiri
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="entry.324789880" value="Voucher" required>
+                                Voucher
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="mb-4">
+                    <legend for="868091882">Bukti Pembayaran</legend>
+                    <input type="text" id="2062170308" name="entry.2062170308" class="d-none" required> <!-- URL File Bukti Pembayaran -->
+                    <input type="hidden" id="1802727729" name="entry.1802727729"> <!-- Total Biaya -->
+                    <button type="button" id="btnBukti" class="btn btn-success col-8 rounded-pill p-3"><i class="bi bi-upload"></i> Upload Bukti Pembayaran</button>
+                    <div id="gambarBukti"></div>
+                </fieldset>
+
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="fbzx" value="-2111076505954348875">
+                <!--
+                    CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+                    This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+                    Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+                    We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+                -->
+                <input type="hidden" name="pageHistory" value="0,1">
+
+
+                <div class="m-5"><hr></div>
+
+
+                <button id="btnLoading" class="btn btn-accent rounded-pill p-4 col-12 d-none" type="button" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sedang memproses...</button>
+                <input  id="btnKirim"   class="btn btn-accent rounded-pill p-4 col-12" type="submit" value="&#10003; Kirim Data">
+                <small>*) Mohon klik tombol Kirim Data <b>SEKALI SAJA</b> dan tunggu hingga muncul tulisan "Data Terkirim".</small>
+
+            </form>
+
+        </div>
+    </div>
+
+    <br><br>
+
+<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/plugins/jquery/jquery.min.js"></script>
+<script src="../assets/plugins/jquery/jquery.form.min.js"></script>
+<script src="../assets/plugins/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+<script src="../assets/2022/daftar.js"></script>
+<script src="../assets/2022/cloudinary.js"></script>
+<script>const inputIdentitas = '891667390'; const inputBukti = '2062170308';</script>
+
+</main>
+</body>
+</html>
