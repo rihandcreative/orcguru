@@ -1,8 +1,8 @@
 // BUKTI PEMBAYARAN //
 var widgetBukti = cloudinary.createUploadWidget({
     cloudName: 'rihandcreative',
-    uploadPreset: 'developer',
-    sources: ['local', 'camera', 'url']
+    uploadPreset: 'orcguru',
+    sources: ['local', 'camera']
 }, (error, result) => {
     if (!error && result && result.event === "success") {
         console.log('Bukti Pembayaran: ', result.info.secure_url);
@@ -17,8 +17,8 @@ document.getElementById("btnBukti").addEventListener("click", function() {
 // KARTU IDENTITAS //
 var widgetIdentitas = cloudinary.createUploadWidget({
     cloudName: 'rihandcreative',
-    uploadPreset: 'developer',
-    sources: ['local', 'camera', 'url'],
+    uploadPreset: 'orcguru',
+    sources: ['local', 'camera']
     // language: 'id'
 }, (error, result) => {
     if (!error && result && result.event === "success") {
