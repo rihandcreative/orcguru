@@ -45,7 +45,7 @@ $('#daftarForm').submit(function (event) {
 })
 
 function hitungHarga() {
-    var biaya   = 81000;
+    var biaya   = 91000;
     var biayaS  = document.getElementById('biaya');
     var ongkirS = document.getElementById('1108582854');
     var ongkir  = ongkirS.options[ongkirS.selectedIndex].getAttribute('data-harga');
@@ -61,9 +61,9 @@ function hitungHarga() {
             console.log('Biaya: ' + biaya + ' + ' + parseFloat(ongkir));
         }
     } else {
-        biayaS.innerHTML    = 81000;
-        biayaI.value        = 81000;
-        console.log('Biaya: 81000');
+        biayaS.innerHTML    = 91000;
+        biayaI.value        = 91000;
+        console.log('Biaya: 91000');
     }
 
 }
