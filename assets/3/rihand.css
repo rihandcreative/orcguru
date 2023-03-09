@@ -1,0 +1,45 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background: rgb(245,250,251);
+    background: linear-gradient(90deg, rgb(92,132,92) 0%, rgb(92,132,92) 35%, rgb(92,132,92) 100%);
+    font-family: 'Comic Neue', serif;
+    font-weight: 400 !important;
+    font-size: larger;
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+.card, .modal {
+    color: #121216;
+}
+
+.img-logo {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.container {
+	padding-top: 10vh;
+}
+
+.card {
+    border-radius: 25px;
+}
+
+/* .btn-accent:hover {
+    background-color: #ffbd24;
+    color: #000;
+} */
+
+.btn-accent {
+    background-color: #9d7010;
+    color: #FFF !important;
+}
