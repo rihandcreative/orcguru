@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background: #233850;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400 !important;
+    font-size: larger;
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+.card, .modal {
+    color: #121216;
+}
+
+.img-logo {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.container {
+	padding-top: 10vh;
+}
+
+.card {
+    border-radius: 25px;
+}
+
+.btn-accent {
+    background-color: #ffd058;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.btn-accent:hover {
+    transform: scale(1.1);
+}
