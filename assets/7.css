@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background: #131a39;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    color: #422127;
+}
+
+h1,h2,h3,h4,h5,h6,button,a {
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 700 !important;
+}
+
+.h-title {
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 900;
+}
+
+.container {
+	padding-top: 5vh;
+}
+
+.title {
+    text-align: center;
+    color: #eaa287;
+    /* text-shadow: 2px 2px #885225; */
+    /* -webkit-text-stroke: 1px #885225; */
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.btn-accent {
+    background-color: #d8603c;
+    color: #fcebe2;
+}
+
+.btn-accent:hover {
+    background-color: #953934;
+    color: #fcebe2;
+    transform: scale(1.1);
+}
+
+.text-left {
+    text-align: left !important;
+}
